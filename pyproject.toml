@@ -1,12 +1,12 @@
 [build-system]
 requires = ["hatchling"]
-build-backend = "hatchling"
+build-backend = "hatchling.build"
 
 [project]
-name = "my_package"
+name = "ecliptics-compedative-tools"
 version = "0.1.0"
 authors = [
-    { name="Your Name", email="your.email@example.com" },
+    { name="Liam Thomas", email="24310@burnside.school.nz" },
 ]
 description = "A short description of my package"
 readme = "README.md"
@@ -19,3 +19,6 @@ classifiers = [
 
 [project.urls]
 Homepage = "https://github.com"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/ecliptics_compedative_tools"]
