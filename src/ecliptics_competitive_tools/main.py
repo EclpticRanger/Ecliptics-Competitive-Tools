@@ -60,11 +60,11 @@ def list_put(input_text: str = "", split_string: str = " "):
     """
     Returns an input converted to an List of strings
     """
-    return input(input_text).split()
+    return input(input_text).split(split_string)
 
 
 def tuple_put(input_text: str = "", split_string: str = " "):
     """
     Returns an input converted to an Tupel of strings
     """
-    return tuple(input(input_text).split())
+    return tuple(input(input_text).split(split_string))
